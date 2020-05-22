@@ -4,17 +4,17 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Npgsql;
+using Npgsql;//importa a biblioteca
 
 namespace conexaoComDB.Classes
 {
     class Cadatro
     {
-        NpgsqlCommand comando = new NpgsqlCommand();
+        NpgsqlCommand comando = new NpgsqlCommand(); //instacia uma variavel de comando para o banco postgres
 
-        Conexao conexao = new Conexao();
-
-        public string mensagem;
+        Conexao conexao = new Conexao();             //instancia uma conexão
+         
+        public string mensagem;                      //string que vai receber a messagem status da conexão
 
         public Cadatro(String nome, String email)
         {
@@ -57,6 +57,7 @@ namespace conexaoComDB.Classes
 
             }
 
-        }
+        }//fim do Cadastro
+
     }
 }
